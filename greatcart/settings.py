@@ -134,3 +134,20 @@ STATICFILES_DIRS = [
 # media files configuration
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR /'media'
+
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.ERROR: "danger",
+    #50: "critical",
+}
+
+# SMTP CONFIGURATION
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ouab24@gmail.com'
+EMAIL_HOST_PASSWORD = 'vzrzsylokpxqalkf'
+EMAIL_USE_TLS = True
+# Optional settings
+EMAIL_TIMEOUT = 60  # Timeout in seconds for SMTP operations
+EMAIL_USE_SSL = False  # Keep False when using TLS on port 587 
