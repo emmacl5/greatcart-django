@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     'carts',
+    'orders',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -146,7 +148,7 @@ MESSAGE_TAGS = {
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'ouab24@gmail.com'
-EMAIL_HOST_PASSWORD = 'vzrzsylokpxqalkf'
+EMAIL_HOST_PASSWORD = 'opdjjbthhrxikrjf'
 EMAIL_USE_TLS = True
 # Optional settings
 EMAIL_TIMEOUT = 60  # Timeout in seconds for SMTP operations
